@@ -1,0 +1,101 @@
+:root {
+  --deep-orange: #ff8000;
+  --medium-orange: #ffa347;
+  --white: #ffff;
+  --peach: #fff6ed;
+  --light-orange: #ffc182;
+  --beige: #fff6ed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--white);
+}
+
+header {
+  color: var(--deep-orange);
+}
+
+.TaskManager {
+  height: 700px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--peach);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.TaskManagerForm-input {
+  border-radius: 25px;
+  border: none;
+  padding: 10px 10px;
+  margin: 10px;
+}
+
+button {
+  background-color: var(--medium-orange);
+  border-radius: 25px;
+  border: none;
+  padding: 10px 10px;
+}
+
+.button-container {
+  display: inline-block;
+  padding: 10px;
+}
+
+.TaskManagerForm-btn {
+  width: 100px;
+}
+
+.TaskManagerContent {
+  align-items: center;
+}
+
+.actionPanel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectContainer {
+  display: flex;
+  align-items: center;
+}
+
+.TaskManagerContent-table {
+  width: 650px;
+  border-collapse: collapse;
+  border-radius: 25px;
+}
+
+​ tr:last-child {
+  border-bottom: none;
+}
+
+thead tr {
+  background-color: var(--light-orange);
+  opacity: 75%;
+  text-align: left;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+
+tr {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  background-color: var(--beige);
+}
